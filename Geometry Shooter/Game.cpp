@@ -633,7 +633,7 @@ void Game::SetMousePos(float xPos, float yPos) {
 /// </summary>
 void Game::CreateBullet() {
 
-	if (State != GAME_LOSS) {
+	if (State == GAME_ACTIVE) {
 		player->UpdateBulletSpawnPosition();
 
 		// Add new bullets to end of vector
